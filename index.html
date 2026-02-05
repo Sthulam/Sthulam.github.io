@@ -67,8 +67,6 @@ button:hover{
 </style>
 </head>
 
-<body>
-
 <header>
     <h1>Suntos par</h1>
     <p>Explorando tecnología, IA y proyectos creativos</p>
@@ -109,6 +107,33 @@ button:hover{
 function saludo(){
     alert("¡Gracias por visitar mi página!");
 }
+</script>
+
+    <head>
+    <title>Valor Diario del Dólar (TRM)</title>
+</head>
+<body>
+
+<h1>Valor actual del Dólar (TRM)</h1>
+<p id="trm">Cargando...</p>
+
+<script>
+fetch('https://www.datos.gov.co/resource/32sa-8pi3.json?$limit=1')
+  .then(response => response.json())
+  .then(data => {
+    if (data && data.length > 0) {
+      const valor = data[0].valor; // campo con la TRM
+      const fecha = data[0].vigenciadesde;
+      document.getElementById('trm').innerText =
+        `TRM: ${valor} COP por USD (fecha: ${fecha})`;
+    } else {
+      document.getElementById('trm').innerText = 'No hay datos disponibles';
+    }
+  })
+  .catch(err => {
+    document.getElementById('trm').innerText = 'Error al obtener TRM';
+    console.error(err);
+  });
 </script>
 
 </body>

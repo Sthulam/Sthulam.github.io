@@ -102,7 +102,23 @@ button:hover{
 <footer>
     © 2026 - Mi página creada con GitHub Pages
 </footer>
+<h1>Valor Actual del Dólar</h1>
+<p id="valor-dolar">Cargando...</p>
 
+<script>
+fetch('https://cdn.moneyconvert.net/api/latest.json')
+  .then(response => response.json())
+  .then(data => {
+    // Suponiendo que quieres el valor de USD → COP
+    const tasaCOP = data.rates.COP;
+    document.getElementById('valor-dolar').innerText = 
+        `1 USD = ${tasaCOP} COP`;
+  })
+  .catch(err => {
+    document.getElementById('valor-dolar').innerText = 'Error al cargar';
+    console.error('Error al obtener la tasa:', err);
+  });
+</script>
 <script>
 function saludo(){
     alert("¡Gracias por visitar mi página!");

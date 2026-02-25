@@ -1,1 +1,17 @@
+#titulo{
+    height: 400px;
+    background: #f00 url(Mandala.png) repeat-y center center;
+    background-size: cover;
+    border-radius: 50px;
 
+}
+p.texto
+{
+    color: aqua;
+}
+p.elif{
+    color: teal;
+}
+div h2 {
+    color:blueviolet
+}

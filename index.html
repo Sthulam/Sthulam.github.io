@@ -1,140 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-<meta charset="UTF-1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Página Personal</title>
-
-<style>
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#0f172a;
-    color:white;
-}
-
-header{
-    text-align:center;
-    padding:60px 20px;
-}
-
-header h1{
-    font-size:48px;
-    margin:0;
-}
-
-header p{
-    color:#94a3b8;
-    font-size:18px;
-}
-
-section{
-    max-width:900px;
-    margin:40px auto;
-    padding:20px;
-}
-
-.card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.3);
-}
-
-h2{
-    border-bottom:1px solid #334155;
-    padding-bottom:10px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#64748b;
-    font-size:14px;
-}
-button{
-    padding:10px 20px;
-    background:#3b82f6;
-    color:white;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-}
-button:hover{
-    background:#2563eb;
-}
-</style>
-</head>
-
-<header>
-    <h1>Suntos par</h1>
-    <p>Explorando tecnología, IA y proyectos creativos</p>
-</header>
-
-<section>
-    <div class="card">
-        <h2>Sobre mí</h2>
-        <p>
-            Bienvenido a mi página personal. Aquí compartiré proyectos, ideas y experimentos
-            relacionados con tecnología, inteligencia artificial y desarrollo web.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>Proyectos</h2>
-        <ul>
-            <li>Página web con GitHub Pages</li>
-            <li>Exploración de IA y almacenamiento en ADN</li>
-            <li>Próximos experimentos y desarrollos</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>Contacto</h2>
-        <p>Puedes escribirme pronto cuando agregue mis redes.</p>
-        <button onclick="saludo()">Haz clic aquí</button>
-    </div>
-</section>
-
-<footer>
-    © 2026 - Mi página creada con GitHub Pages
-</footer>
-<h1>Valor Actual del Dólar</h1>
-<p id="valor-dolar">Cargando...</p>
-
-<script>
-function saludo(){
-    alert("¡Gracias por visitar mi página!");
-}
-</script>
-
-    <head>
-    <title>Valor Diario del Dólar (TRM)</title>
+      <title>Blog personal</title>
+      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Valor actual del Dólar (TRM)</h1>
-<p id="trm">Cargando...</p>
-
-<script>
-fetch('https://www.datos.gov.co/resource/32sa-8pi3.json?$limit=1')
-  .then(response => response.json())
-  .then(data => {
-    if (data && data.length > 0) {
-      const valor = data[0].valor; // campo con la TRM
-      const fecha = data[0].vigenciadesde;
-      document.getElementById('trm').innerText =
-        `TRM: ${valor} COP por USD (fecha: ${fecha})`;
-    } else {
-      document.getElementById('trm').innerText = 'No hay datos disponibles';
-    }
-  })
-  .catch(err => {
-    document.getElementById('trm').innerText = 'Error al obtener TRM';
-    console.error(err);
-  });
-</script>
-
+    <h1 id="titulo"></h1>
+    <p class="texto">Parrafo</p>
+    <p class="texto elif">Parrafo</p> 
+    <p class="texto ">Parrafo</p>
+    <div>
+        <p>Hola</p>
+        <h2> que</h2>
+        <h3> hace</h3>
+    </div>
 </body>
 </html>

@@ -2,7 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
     height: 200px;
-    background: #fff url(Mandala.png) center center;
+    background: #000 url(Mandala.png) center center;
     background-size: cover;
     border-radius: 20px;
     }

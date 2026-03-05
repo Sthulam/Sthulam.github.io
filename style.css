@@ -1,14 +1,17 @@
 #titulo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
-    height: 200px;
+    height: 100px;
     background: #000 url(Img/Mandala.png) center center;
     background-size: cover;
     border-radius: 20px;
+    position: sticky;
     }
 
-.titulo{
-    height: 100px
+.mandala{
+    height: 300px;
+    position: fixed;
+      
     
 }
 
@@ -22,6 +25,7 @@
 
 .gif{
     width: 100px;
+    margin: 400px;
     }
     
 .con{

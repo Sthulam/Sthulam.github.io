@@ -9,8 +9,9 @@
     }
 
 .mandala{
-    height: 300px;
+    height: 100px;
     position: fixed;
+    size: 0 auto;
       
     
 }

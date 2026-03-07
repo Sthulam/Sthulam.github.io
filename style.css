@@ -8,7 +8,15 @@
     position: sticky;
     }
 
-.mandala{
+.nav{
+    font-size: 200%;
+    color: rgb(226, 226, 226);
+    background-color: blue;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.frente{
     height: 100px;
     position: fixed;
     size: 0 auto;
@@ -25,11 +33,13 @@
 }
 
 .gif{
-    width: 100px;
-    margin: 400px;
-    }
+    display: flex;
+    justify-content: center;  
+    margin: 100px;
+}
     
 .con{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
+
 }

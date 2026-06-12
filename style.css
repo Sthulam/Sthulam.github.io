@@ -1,3 +1,8 @@
+body{
+    background: linear-gradient(to top, #000000, #0c1952);
+
+}
+
 #titulo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
@@ -8,10 +13,11 @@
 }
 
 .nav{
+    text-align: center;
     font-size: 200%;
-    color: rgb(226, 226, 226);
-    background-color: blue;
-    height: 50px;
+    color: aliceblue;
+    background-color: rgb(107, 64, 28);
+    height: 45px;
     border-radius: 20px;
 }
 
@@ -22,11 +28,15 @@
 }
 
 .titulos{
-    text-align: center
+    text-align: center;
+    color: aliceblue;
 }
 
 .escritos{
     text-align: center;
+    color: aliceblue;
+    background-color: rgb(58, 69, 97);
+    border-radius: 100px;
 }
 
 .gif{
@@ -38,5 +48,10 @@
 .con{
     display: flex;
     justify-content: center;   
+
+}
+
+.fondo{
+    background-color: blue;
 
 }
